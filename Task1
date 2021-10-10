@@ -1,0 +1,21 @@
+package hw1;
+import java.util.Scanner;
+public class Task1 {
+    public static int MaximumOf2Num(int a, int b)
+    {
+        if (a > b)
+        {
+            return a;
+        }else
+        {
+            return b;
+        }
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int k = MaximumOf2Num(a, b);
+        System.out.println(k);
+    }
+}
