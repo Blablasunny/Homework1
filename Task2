@@ -1,0 +1,25 @@
+package hw1;
+import java.util.Scanner;
+public class Task2 {
+    public static int MaximumOf3Num(int x, int y, int z)
+    {
+        if (x >= y && x >= z)
+        {
+            return x;
+        }else if (y >= x && y >= z)
+        {
+            return y;
+        }else
+        {
+            return z;
+        }
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        int ma = MaximumOf3Num(a, b, c);
+        System.out.println(ma);
+    }
+}
